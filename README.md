@@ -1,10 +1,13 @@
 # LeetCode
+
 LeetCode刷题
 
 个人笔记：https://www.yuque.com/huangzhongqing/leetcode
 
+编程语言：C++
 
 ## 算法Algorithm
+
 * 双指针
 * 排序
 * 贪心Greedy
@@ -14,8 +17,8 @@ LeetCode刷题
 * 动态规划DP
 * 数学
 
-
 ## 数据结构datastructure
+
 * 链表
 * 图
 * 树
@@ -24,7 +27,3 @@ LeetCode刷题
 * 字符串
 * 数组与矩阵
 * 位运算
-
-
-
-
