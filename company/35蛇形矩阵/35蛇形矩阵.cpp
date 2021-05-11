@@ -4,7 +4,7 @@
  * @Company(School): UCAS
  * @Email: 1756260160@qq.com
  * @Date: 2021-05-11 20:28:56
- * @LastEditTime: 2021-05-11 20:29:53
+ * @LastEditTime: 2021-05-11 20:40:05
  * @FilePath: /LeetCode/company/35蛇形矩阵/35蛇形矩阵.cpp
  */
 #include <stdio.h>
@@ -18,17 +18,17 @@ int main()
     while (cin>>n)
     {
         int beg=1;
-        for(int i=1;i<=n;i++)
+        for(int i=1;i<=n;i++) //每一行 1,2,3,4
         {
             cout<<beg;
-            int tmp = beg;
-            for(int j=i+1;j<=n;j++)
+            int tmp = beg;  // 基于第一位数字相加
+            for(int j=i+1;j<=n;j++)  // 2,3,4
             {
                 tmp+=j;
                 cout<<" "<<tmp;              
             }
             cout<<endl;
-            beg+=i;
+            beg+=i;  //每一行第一个数字
         }
     }
     return 0;
