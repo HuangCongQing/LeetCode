@@ -1,11 +1,36 @@
 /*
- * @Description: 
+ * @Description: https://www.nowcoder.com/practice/eaf5b886bd6645dd9cfb5406f3753e15?tpId=37&rp=1&ru=%2Fta%2Fhuawei&qru=%2Fta%2Fhuawei%2Fquestion-ranking&tab=answerKey
  * @Author: HCQ
  * @Company(School): UCAS
  * @Email: 1756260160@qq.com
  * @Date: 2021-05-11 21:32:58
- * @LastEditTime: 2021-05-11 21:33:19
+ * @LastEditTime: 2021-05-11 21:41:04
  * @FilePath: /LeetCode/company/64MP3光标位置/64MP3光标位置.cpp
+ */
+/* 
+
+输入描述:
+输入说明：
+1 输入歌曲数量
+2 输入命令 U或者D
+
+本题含有多组输入数据！
+
+
+输出描述:
+输出说明
+1 输出当前列表
+2 输出当前选中歌曲
+
+示例1
+输入
+复制
+10
+UUUU
+输出
+复制
+7 8 9 10
+7
  */
 #include <iostream>
 #include <string>
@@ -20,15 +45,15 @@ int main(){
         {
             for(int i=0;i<order.size();i++)
             {
-                if( num==1 && order[i]=='U' ) num=n; 
+                if( num==1 && order[i]=='U' ) num=n;   // 双重判断！！！！！！
                 else if( num==n && order[i]=='D' ) num=1;
                 else if(order[i]=='U') num--;
                 else  num++; 
             }
             for(int i=1;i<=n-1;i++) 
                 cout<<i<<' ';
-            cout<<n<<endl;
-            cout<<num<<endl;
+            cout<<n<<endl;   // 输出当前歌曲
+            cout<<num<<endl;// 输出选中歌曲
         }
         else  //歌曲总数大于4时，显示完全所有歌曲需要翻页，屏幕总是显示4首歌曲
         {
