@@ -4,7 +4,7 @@
  * @Company(School): UCAS
  * @Email: 1756260160@qq.com
  * @Date: 2021-09-12 14:38:51
- * @LastEditTime: 2021-09-12 15:22:52
+ * @LastEditTime: 2021-09-12 15:24:31
  * @FilePath: /LeetCode/algorithm_template/02bfs.cpp
  */
 #include <iostream>
@@ -18,8 +18,9 @@
 using namespace std;
 
 
-//（C++模板）两行visited 两行q 一行step
+//（C++模板）
 int BFS(string start, string  target ){ // 输入起点和终点(可能是TreeNode/string/int) 本模板以string举例
+    // 初始化：两行visited 两行q 一行step
     unordered_set<string> visited;
     // if(visit.count("0000")) return -1;// 同时判断初始情况下，目标在死亡数字里面
     visited.insert(start);   // 初始化已访问，  visit.insert(deadends.begin(), deadends.end());
