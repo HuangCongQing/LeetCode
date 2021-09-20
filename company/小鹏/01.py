@@ -20,3 +20,5 @@ A,B，C, D(矩阵的四个点)
 a.x,a.y
 (ABxAP)*(CDxCP) >=0
 # 
+
+
