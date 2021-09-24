@@ -48,8 +48,8 @@ public:
         while (!q.empty()) {
             auto cur = q.top(); // 取最大的
             q.pop();  // 
-            if (ans[cur.first] != MAXVALUE) continue;  // 当前访问节点
-            ans[cur.first] = cur.second;  // r[起点到当前访问节点] =  k到当前访问节点的总权重
+            // if (ans[cur.first] != MAXVALUE) continue;  // 当前访问节点
+            // ans[cur.first] = cur.second;  // r[起点到当前访问节点] =  k到当前访问节点的总权重
             
             // 更新ans======================cur.first是下标================================================
             if(ans[cur.first] < cur.second) ans[cur.first] = cur.second;  // r[起点到当前访问节点curr] =  k到当前访问节点的总权重
