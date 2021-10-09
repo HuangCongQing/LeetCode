@@ -27,7 +27,7 @@ for i in range(len(diff)):
             k = k-1
             count-=1
     else:
-        short = (diff[i] -1)&k 
+        short = (diff[i] -1)%k 
         if(k>=short):
             k = k-short
             count-=1
